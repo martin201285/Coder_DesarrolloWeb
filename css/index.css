@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap');
+
+/* VARIABLES */
+
+:root {
+    /* Backgrounds */
+
+    --background-main: #111111;
+    --background-header-footer: #414141;
+    --background-header-footer-hover: #D9D9D9;
+    --background-subtitles: #222222;
+    --background-text: #FFFFFF;
+
+    /* Font Sizes */
+
+    --fonts-xxl: 4.2em;
+    --fonts-xl: 3.0em;
+    --fonts-lg: 2.2em;
+    --fonts-md: 1.8em;
+    --fonts-sm: 1.6em;
+    --fonts-xs: 1.4em;
+
+    /* Spacings */
+
+    --spacing-xxl: 12.0rem;
+    --spacing-xl: 9.6rem;
+    --spacing-lg: 6.4rem;
+    --spacing-md: 3.2rem;
+    --spacing-sm: 1.6rem;
+    --spacing-xs: 0.8rem;
+}
+
+/* NORMALIZE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--background-main);
+}
+
+header {
+    background-color: var(--background-header-footer);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--spacing-lg);
+}
+
+main {
+    margin-left: var(--spacing-lg);
+    margin-right: var(--spacing-lg);
+    /* max-width: 1200px; */
+}
+
+h1 {
+    font-weight: bold;
+    font-size: var(--fonts-xxl);
+}
+
+h2 {
+    font-weight: bold;
+    font-size: var(--fonts-xl);
+}
+
+h3 {
+    font-weight: normal;
+    font-size: var(--fonts-lg);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: var(--fonts-md);
+}
+
+.mainSubtitle {
+    background-color: var(--background-subtitles);
+    padding: 0 var(--spacing-lg);
+}
+
+.mainSubtitle h2 {
+    font-weight: normal;
+}
+
+button {
+    background: linear-gradient(180deg, #C8C8C8 0%, rgba(200, 200, 200, 0.45) 100%);
+    border-radius: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    border: 0;
+    padding: 0.5rem 0.1rem;
+    width: var(--spacing-xl);
+    height: var(--spacing-md);
+}
+
+button:hover {
+    background: linear-gradient(180deg, #868686 0%, rgba(134, 134, 134, 0.44) 100%);
+    cursor: pointer;
+}
+
+/* HEADER */
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-lg);
+}
+
+h1:hover {
+    cursor: default;
+}
+
+.menu__pages {
+    display: flex;
+    /* gap: 2.9rem; */
+}
+
+.menu__pages .pages__items a {
+    padding: 15px 10px;
+    transition: all .4s;
+}
+
+.menu__pages .pages__items a:hover {
+    background-color: #585858;
+}
+
+.menu__social {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.social__items i {
+    transition: all 0.4s;
+}
+
+.social__items i:hover {
+    transform: scale(1.4);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--background-header-footer);
+    font-size: var(--fonts-xs);
+    text-align: center;
+    padding: var(--spacing-xs) 0;
+}
+
+/* INDEX */
+
+.banner .banner__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.upcomingRelease__text p {
+    font-size: var(--fonts-xl)
+}
+
+.upcomingRelease__cover img {
+    width: 44.0rem;
+    height: 44.8rem;
+}
+
+.gallery__images img {
+    filter: grayscale(100%);
+}
+
+.gallery__images img:hover {
+    filter: none;
+}
+
+.collaborationsBox img {
+    width: 25.6rem;
+    height: 25.6rem;
+}
+
+.collaborationsBox__text1 p {
+    font-size: var(--fonts-lg)
+}
+
+.collaborationsBox__text2 p {
+    font-size: var(--fonts-sm)
+}
+
+.collaborationsBox__text1 .text1__title, .collaborationsBox__text2 .text2__title {
+    font-weight: bold;
+}
+
+/* ABOUT */
+
+.artist {
+    padding: var(--spacing-md) 0 0 0;
+}
+
+.artist__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-md) 0 var(--spacing-md) 0;
+    gap: 22.4rem;
+}
+
+.artist__box p {
+    padding: var(--spacing-xs) 0 var(--spacing-xs) 0;
+}
+
+.artist__box p, .influences__box td {
+    text-transform: none;
+    font-size: var(--fonts-sm)
+}
+
+.artist__box--circle {
+    padding: 0 var(--spacing-lg) 0 0;
+}
+
+.artist__box--circle img {
+    filter: grayscale(100%);
+    border-radius: 50%;
+    width: 25.6rem;
+    height: 25.6rem;
+    transition: all .9s;
+}
+
+.artist__box--circle img:hover {
+    filter: none;
+}
+
+.influences {
+    padding: var(--spacing-md) 0 var(--spacing-lg) 0;
+}
+
+.influences__box {
+    padding: var(--spacing-md) 0 0 0;
+}
+
+.box__table {
+    width: 100%;
+}
+
+.box__table td {
+    text-align: center;
+}
+
+/* GEAR */
+
+.guitars {
+    padding: var(--spacing-md) 0 0 0;
+}
+
+.gear {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-md) 0 var(--spacing-lg) 0;
+}
+
+.gear__text {
+    font-weight: 400;
+    text-align: center;
+    font-size: var(--fonts-xs);
+}
+
+.gear img {
+    transform: scale(0.92);
+    transition: all 0.7s;
+}
+
+.gear img:hover {
+    transform: scale(1.0);
+}
+
+.gear__picks {
+    display: flex;
+    justify-content: center;
+}
+
+/* MUSIC */
+
+.musicBox {
+    padding: var(--spacing-md) 0 0 0;
+}
+
+.musicBox__songs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.25rem;
+    padding: var(--spacing-md) 0;
+}
+
+.musicBox__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.musicBox__items img {
+    width: 28.8rem;
+    height: 28.8rem;
+}
+
+.musicBox__buttons {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-sm);
+    gap: var(--spacing-sm);
+}
+
+/* CONTACT */
+
+.form {
+    padding: var(--spacing-md) 0;
+}
+
+.contactForm {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-md) 0;
+}
+
+.contactForm label {
+    font-size: var(--fonts-md);
+    text-transform: none;
+    font-weight: 500;
+}
+
+.contactForm__button {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-md) 0;
+}
+
+.contactForm ::placeholder {
+    font-size: var(--fonts-xs);
+    font-family: Montserrat, sans-serif;
+}
+
+input, textarea {
+    border-radius: 1rem;
+    padding: 0 0 0 0.5em;
+    font-size: var(--fonts-md);
+}
