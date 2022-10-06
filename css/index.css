@@ -211,6 +211,7 @@ footer {
 
 .gallery__images img {
     filter: grayscale(100%);
+    transition: all .9s;
 }
 
 .gallery__images img:hover {
