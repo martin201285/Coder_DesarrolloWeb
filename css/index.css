@@ -172,8 +172,36 @@ footer {
     height: 100%;
 }
 
+.upcomingRelease {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: var(--spacing-md) 0;
+}
+
+.upcomingRelease__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 var(--spacing-sm);
+    gap: var(--spacing-lg);
+}
+
+.upcomingRelease__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .upcomingRelease__text p {
-    font-size: var(--fonts-xl)
+    font-size: var(--fonts-xl);
+}
+
+.upcomingRelease__logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .upcomingRelease__cover img {
