@@ -378,6 +378,11 @@ footer {
     padding: var(--spacing-md) 0 var(--spacing-lg) 0;
 }
 
+.effects .gear {
+    justify-content: flex-start;
+    gap: 18.0rem;
+}
+
 .gear__text {
     font-weight: 400;
     text-align: center;
