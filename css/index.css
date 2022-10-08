@@ -437,7 +437,8 @@ footer {
 
 .contactForm {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: var(--spacing-md) 0;
 }
 
@@ -447,19 +448,41 @@ footer {
     font-weight: 500;
 }
 
-.contactForm__button {
+.contactForm__box {
     display: flex;
-    justify-content: center;
-    padding: var(--spacing-md) 0;
+    flex-direction: column;
 }
 
-.contactForm ::placeholder {
-    font-size: var(--fonts-xs);
-    font-family: Montserrat, sans-serif;
+.contactForm__box .box__container {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+    padding: 0 0 var(--spacing-md) 0;
 }
 
-input, textarea {
+.box__container .container__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.container__group input {
+    width: 28.8rem;
+    height: var(--spacing-md);
     border-radius: 1rem;
     padding: 0 0 0 0.5em;
-    font-size: var(--fonts-md);
+    font-size: var(--fonts-sm);
+}
+
+.container__group textarea {
+    width: 64.0rem;
+    height: 32.0rem;
+    border-radius: 1rem;
+    padding: 0 0 0 0.5em;
+    font-size: var(--fonts-sm);
+}
+
+.box__container--button {
+    display: flex;
+    justify-content: center;
 }
