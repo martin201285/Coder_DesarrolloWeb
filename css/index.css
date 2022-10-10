@@ -124,6 +124,11 @@ button:hover {
     gap: var(--spacing-lg);
 }
 
+.hamburger__menu {
+    display: none;
+    font-size: 3.8em;
+}
+
 h1:hover {
     cursor: default;
 }
@@ -376,6 +381,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: var(--spacing-md) 0 var(--spacing-lg) 0;
+    flex-wrap: wrap;
 }
 
 .effects .gear {
@@ -414,6 +420,7 @@ footer {
     justify-content: flex-start;
     gap: 2.25rem;
     padding: var(--spacing-md) 0;
+    flex-wrap: wrap;
 }
 
 .musicBox__items {
@@ -491,3 +498,63 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+/* MEDIAS */
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 0 var(--spacing-md);
+        align-items: center;
+    }
+
+    .menu__pages, .menu__social {
+        display: none;
+    }
+
+    .menu .hamburger__menu {
+        display: block;
+    }
+
+    main {
+        margin-left: var(--spacing-md);
+        margin-right: var(--spacing-md);
+    }
+
+    .mainSubtitle {
+        padding: 0 var(--spacing-md);
+    }
+
+    /* Gear */
+
+    .gear {
+        justify-content: center;
+        gap: var(--fonts-md);
+    }
+
+    .gear img {
+        transform: none;
+    }
+    
+    .effects .gear {
+        justify-content: center;
+        gap: var(--fonts-md);
+    }
+
+    .gear__bass img {
+        width: 100%;
+    }
+
+    /* Music */
+
+    .musicBox__songs {
+        justify-content: center;
+    }
+}
+
