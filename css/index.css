@@ -699,6 +699,10 @@ footer {
         width: 100%;
     }
 
+    .gear__guitars img {
+        width: 100%;
+    }
+
     /* Music */
 
     .musicBox__songs {
