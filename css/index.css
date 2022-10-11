@@ -739,6 +739,10 @@ footer {
         justify-content: center;
     }
 
+    .musicBox__songs {
+        flex-direction: column-reverse;
+    }
+
     /* Contact */
 
     .contactForm .box__container {
