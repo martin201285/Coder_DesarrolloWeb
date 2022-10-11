@@ -368,13 +368,37 @@ footer {
     padding: var(--spacing-md) 0 0 0;
 }
 
-.box__table {
-    width: 100%;
+.box__column {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.box__table td {
+.box__column ul {
     text-align: center;
+    font-size: var(--fonts-sm);
+    text-transform: initial;
 }
+
+.column__list1 {
+    grid-column: 1 / 2;
+}
+
+.column__list2 {
+    grid-column: 2 / 3;
+}
+
+.column__list3 {
+    grid-column: 3 / 4;
+}
+
+.column__list4 {
+    grid-column: 4 / 5;
+}
+
+.column__list5 {
+    grid-column: 5 / 6;
+}
+
 
 /* GEAR */
 
@@ -678,6 +702,12 @@ footer {
    .artist__box p {
     text-align: center;
    }
+
+   .box__column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    }
 
     /* Gear */
 
