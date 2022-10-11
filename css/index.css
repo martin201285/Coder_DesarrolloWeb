@@ -738,5 +738,16 @@ footer {
     .musicBox__songs {
         justify-content: center;
     }
+
+    /* Contact */
+
+    .contactForm .box__container {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .container__group input, .container__group textarea {
+        width: 45.0rem;
+    }
 }
 
