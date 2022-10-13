@@ -506,7 +506,7 @@ footer {
 
 /* MEDIAS */
 
-/* Mobile */
+/* Mobile (DESACTIVADA PARA PROBAR BOOTSTRAP) */
 
 @media (max-width: 480px) {
 
@@ -552,7 +552,7 @@ footer {
 
     /* Index */
 
-    .upcomingRelease {
+    /* .upcomingRelease {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 0.5fr;
         padding: var(--spacing-md) 0;
@@ -654,7 +654,7 @@ footer {
     
     .collaborationsBox__text2 p {
         font-size: var(--fonts-xs);
-    }
+    } */
 
     /* About */
 
@@ -681,7 +681,7 @@ footer {
 
     /* Gear */
 
-    .gear {
+    /* .gear {
         justify-content: center;
         gap: var(--fonts-md);
     }
@@ -697,13 +697,13 @@ footer {
 
     .gear__bass img {
         width: 100%;
-    }
+    } */
 
     /* Music */
 
-    .musicBox__songs {
+    /* .musicBox__songs {
         justify-content: center;
-    }
+    } */
 }
 
 
@@ -784,8 +784,33 @@ hr {
     padding-right: 0;
 }
 
+/* Music */
+
+.musicBox__items img {
+    width: 24.5rem;
+    height: 24.5rem;
+}
+
+.musicBox__songs {
+    justify-content: center;
+}
+
+/* MEDIAS DESRESET BOOTSTRAP */
+
 @media screen and (max-width: 992px) {
     
+    /* Header */
+
+    .menu__pages, .menu__social {
+        display: none;
+    }
+    
+    .menu .hamburger__menu {
+        display: block;
+    }
+
+    /* Artist */
+
     .artist__section {
         flex-direction: column-reverse;
         gap: var(--spacing-md);
@@ -797,16 +822,6 @@ hr {
     
     .box__column {
         gap: var(--spacing-sm);
-    }
-
-    /* Header */
-
-    .menu__pages, .menu__social {
-        display: none;
-    }
-
-    .menu .hamburger__menu {
-        display: block;
     }
 }
 
