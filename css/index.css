@@ -510,7 +510,7 @@ footer {
 
 @media (max-width: 480px) {
 
-    html {
+    /* html {
         font-size: 50%;
     }
 
@@ -531,9 +531,9 @@ footer {
 
     button {
         font-size: 12px;
-    }
+    } */
 
-    .menu__pages, .menu__social {
+    /* .menu__pages, .menu__social {
         display: none;
     }
 
@@ -548,7 +548,7 @@ footer {
 
     .mainSubtitle {
         padding: 0 var(--spacing-md);
-    }
+    } */
 
     /* Index */
 
@@ -658,7 +658,7 @@ footer {
 
     /* About */
 
-    .artist__section {
+    /* .artist__section {
         flex-direction: column;
         flex-flow: column-reverse;
         justify-content: flex-start;
@@ -677,7 +677,7 @@ footer {
 
    .artist__box p {
     text-align: center;
-   }
+   } */
 
     /* Gear */
 
@@ -703,6 +703,129 @@ footer {
 
     .musicBox__songs {
         justify-content: center;
+    }
+}
+
+
+/* BOOTSTRAP DESRESET */
+
+body {
+    line-height: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    line-height: normal;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+hr {
+    margin: 0;
+    opacity: initial;
+}
+
+.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* About */
+
+.box__column {
+    padding: 0 0 var(--spacing-md) 0;
+    justify-content: center;
+}
+
+.box__column li {
+    font-family: Montserrat, sans-serif;
+    font-size: var(--fonts-sm);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.menu__pages a:hover {
+    color: white;
+}
+
+.social__items i:hover {
+    transform: scale(1.4);
+    color: white;
+}
+
+.artist__section {
+    gap: 0;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.artist__box {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.artist__box--circle {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.column__list1, .column__list2, .column__list3, .column__list4, .column__list5 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 992px) {
+    
+    .artist__section {
+        flex-direction: column-reverse;
+        gap: var(--spacing-md);
+    }
+
+    .artist__box p {
+        text-align: center;
+    }
+    
+    .box__column {
+        gap: var(--spacing-sm);
+    }
+
+    /* Header */
+
+    .menu__pages, .menu__social {
+        display: none;
+    }
+
+    .menu .hamburger__menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    header {
+        align-items: center;
+    }
+
+    h1 {
+        font-size: var(--fonts-xl);
+    }
+
+    h2 {
+        font-size: var(--fonts-lg);
+    }
+
+    .hamburger__menu {
+        font-size: 3.2em;
     }
 }
 
