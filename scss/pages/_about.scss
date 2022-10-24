@@ -1,0 +1,111 @@
+/* ABOUT */
+
+.artist {
+    padding: $pacing-md 0 0 0;
+
+    .artist__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacing-md 0 $spacing-md 0;
+        gap: 22.4rem;
+
+        .artist__box p {
+            padding: $spacing-xs 0 $spacing-xs 0;
+            font-size: $fonts-sm;
+            text-transform: none;
+        }
+
+        .artist__box--circle {
+            padding: 0 $spacing-lg 0 0;
+
+            img {
+                filter: grayscale(100%);
+                border-radius: 50%;
+                width: 25.6rem;
+                height: 25.6rem;
+                transition: all .9s;
+
+                &:hover {
+                    filter: none;
+                }
+            }
+        }
+    }
+}
+
+.influences {
+    padding: $spacing-md 0 $spacing-lg 0;
+
+    .influences__box {
+        padding: $spacing-md 0 0 0;
+
+        .box__column {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+            ul {
+                text-align: center;
+                font-size: $fonts-sm;
+                text-transform: initial;
+            }
+
+            .column__list1 {
+                grid-column: 1 / 2;
+            }
+            
+            .column__list2 {
+                grid-column: 2 / 3;
+            }
+            
+            .column__list3 {
+                grid-column: 3 / 4;
+            }
+            
+            .column__list4 {
+                grid-column: 4 / 5;
+            }
+            
+            .column__list5 {
+                grid-column: 5 / 6;
+            }
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .artist__section {
+        flex-direction: column;
+        flex-flow: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        gap: $spacing-md;
+
+        .artist__box p {
+            text-align: center;
+        }
+
+        .artist__box--circle {
+            padding: 0;
+            order: 1;
+
+            img {
+                filter: none;
+            }
+        }
+    }
+
+    .box__column {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+}
+
+
+
+
+
+
+

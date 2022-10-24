@@ -1,0 +1,114 @@
+/* NORMALIZE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    body {
+        font-family: Montserrat, sans-serif;
+        text-transform: uppercase;
+        color: white;
+        background-color: $background-main;
+
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: $fonts-md;
+            }
+        }
+
+        .banner {
+            height: 76.5rem;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: $fonts-xl;
+        }
+
+        .mainSubtitle {
+            background-color: $background-subtitles;
+            padding: 0 $spacing-lg;
+
+            h2 {
+                font-weight: normal;
+            }
+        }
+
+        main {
+            margin-left: $spacing-lg;
+            margin-right: $spacing-lg;
+            max-width: 1300px;
+
+            h3 {
+                font-weight: normal;
+                font-size: $fonts-lg;
+            }
+        }
+
+        button {
+            background: linear-gradient(180deg, #C8C8C8 0%, rgba(200, 200, 200, 0.45) 100%);
+            border-radius: 10px;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: normal;
+            border: 0;
+            padding: 0.5rem 0.1rem;
+            width: $pacing-xl;
+            height: $pacing-md;
+        
+            &:hover {
+                background: linear-gradient(180deg, #868686 0%, rgba(134, 134, 134, 0.44) 100%);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (min-width: 1367px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1238px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    h2 {
+        font-weight: bold;
+        font-size: $fonts-lg;
+    }
+    
+    h3 {
+        font-weight: normal;
+        font-size: $fonts-md;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 680px) {
+
+    html {
+        font-size: 50%;
+    }
+}
+
+
