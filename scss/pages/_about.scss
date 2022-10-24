@@ -10,7 +10,7 @@
         padding: $spacing-md 0 $spacing-md 0;
         gap: 22.4rem;
 
-        @media (max-width: 1050px) {
+        @media (max-width: 1150px) {
             flex-direction: column;
             justify-content: flex-start;
             flex-flow: column-reverse;
@@ -22,7 +22,7 @@
             font-size: $fonts-sm;
             text-transform: none;
 
-            @media (max-width: 1050px) {
+            @media (max-width: 1150px) {
                 text-align: center;          
             }
         }
@@ -30,7 +30,7 @@
         .artist__box--circle {
             padding: 0 $spacing-lg 0 0;
 
-            @media (max-width: 1050px) {
+            @media (max-width: 1150px) {
                 padding: 0;
                 order: 1;        
             }
@@ -60,7 +60,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 
-            @media (max-width: 1050px) {
+            @media (max-width: 1150px) {
                 display: flex;
                 flex-direction: column;
                 gap: $spacing-sm;

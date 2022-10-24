@@ -13,10 +13,6 @@ header {
         &:hover {
             cursor: default;
         }
-
-        @media (max-width: 1200px) {
-            font-size: $fonts-xl;
-        }
     }
 
     .menu {
@@ -41,7 +37,7 @@ header {
                 }
             }
 
-            @media (max-width: 1050px) {
+            @media (max-width: 1150px) {
                 display: flex;
                 gap: 2.9rem;
                 flex-direction: column;
@@ -63,13 +59,13 @@ header {
                 }
             }
 
-            @media (max-width: 1050px) {
+            @media (max-width: 1150px) {
                 display: flex;
                 gap: $spacing-lg;                
             }
         }
 
-        @media (max-width: 1050px) {
+        @media (max-width: 1150px) {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
@@ -86,13 +82,9 @@ header {
         }
     }
 
-    @media (max-width: 1050px) {
+    @media (max-width: 1150px) {
         align-items: center;
-    }
-
-    @media (max-width: 768px) {
-        padding: 0 $spacing-lg;
-        align-items: center;
+        padding: 0 $spacing-md;
     }
 }
 
@@ -103,10 +95,10 @@ header {
 #btn {
     cursor: pointer;
     display: none;
-    font-size: 3.0em;
+    font-size: $fonts-xxl;
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1150px) {
     #check {
         display: none;
     }
@@ -117,13 +109,18 @@ header {
         z-index: 1;
     }
 
+    #check:checked + label i {
+        background-color: initial;
+    }
+
     #btn {
         display: initial;
-        font-size: $fonts-xl;
         position: fixed;
         z-index: 2;
-        top: 0.35rem;
-        right: $spacing-lg;   
+        top: 0;
+        right: $spacing-md;
+        background-color: $background-header-footer;
+        padding: 0.5rem;   
     }
 }
 

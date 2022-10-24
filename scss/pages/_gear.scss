@@ -10,7 +10,7 @@
     padding: $spacing-md 0 $spacing-lg 0;
     flex-wrap: wrap;
 
-    @media (max-width: 1050px) {
+    @media (max-width: 1150px) {
         justify-content: center;
         gap: $fonts-md;        
     }
@@ -44,13 +44,13 @@
     justify-content: flex-start;
     gap: 18.0rem;
 
-    @media (max-width: 1050px) {
+    @media (max-width: 1150px) {
         justify-content: center;
         gap: $fonts-md;        
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1150px) {
 
     .gear__bass img {
         width: 100%;
