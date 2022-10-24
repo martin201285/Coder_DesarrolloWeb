@@ -32,6 +32,11 @@ html {
         h2 {
             font-weight: bold;
             font-size: $fonts-xl;
+
+            @media (max-width: 768px) {
+                font-weight: bold;
+                font-size: $fonts-lg;
+            }
         }
 
         .mainSubtitle {
@@ -46,11 +51,24 @@ html {
         main {
             margin-left: $spacing-lg;
             margin-right: $spacing-lg;
-            max-width: 1300px;
 
             h3 {
                 font-weight: normal;
                 font-size: $fonts-lg;
+
+                @media (max-width: 768px) {
+                    font-weight: normal;
+                    font-size: $fonts-md;
+                }
+            }
+
+            @media (min-width: 1367px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 1238px;
             }
         }
 
@@ -64,51 +82,24 @@ html {
             font-style: normal;
             border: 0;
             padding: 0.5rem 0.1rem;
-            width: $pacing-xl;
-            height: $pacing-md;
+            width: $spacing-xl;
+            height: $spacing-md;
         
             &:hover {
                 background: linear-gradient(180deg, #868686 0%, rgba(134, 134, 134, 0.44) 100%);
                 cursor: pointer;
             }
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+            }
         }
     }
-}
 
-@media (min-width: 1367px) {
-    
-    main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1238px;
+    @media (max-width: 680px) {
+        font-size: 50%;       
     }
 }
 
-@media (max-width: 768px) {
-    
-    h2 {
-        font-weight: bold;
-        font-size: $fonts-lg;
-    }
-    
-    h3 {
-        font-weight: normal;
-        font-size: $fonts-md;
-    }
-
-    button {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 680px) {
-
-    html {
-        font-size: 50%;
-    }
-}
 
 

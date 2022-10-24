@@ -1,0 +1,44 @@
+/* MUSIC */
+
+.musicBox {
+    padding: $spacing-md 0 0 0;
+
+    .musicBox__songs {
+        display: flex;
+        justify-content: flex-start;
+        gap: 2.25rem;
+        padding: $spacing-md 0;
+        flex-wrap: wrap;
+
+        @media (min-width: 1367px) {
+            justify-content: center;        
+        }
+
+        @media (max-width: 1050px) {
+            justify-content: center;        
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+            justify-content: center;   
+        }
+
+        .musicBox__items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 28.8rem;
+                height: 28.8rem;
+            }
+
+            .musicBox__buttons {
+                display: flex;
+                justify-content: center;
+                padding: $spacing-sm;
+                gap: $spacing-sm;
+            }
+        }
+    }
+}

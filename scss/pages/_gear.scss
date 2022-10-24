@@ -1,0 +1,68 @@
+/* GEAR */
+
+.guitars {
+    padding: $spacing-md 0 0 0;
+}
+
+.gear {
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing-md 0 $spacing-lg 0;
+    flex-wrap: wrap;
+
+    @media (max-width: 1050px) {
+        justify-content: center;
+        gap: $fonts-md;        
+    }
+
+    img {
+        transform: scale(0.92);
+        transition: all 0.7s;
+
+        &:hover {
+            transform: scale(1.0);
+        }
+
+        @media (max-width: 1050px) {
+            transform: none;       
+        }
+    }
+
+    .gear__text {
+        font-weight: 400;
+        text-align: center;
+        font-size: $fonts-xs;
+    }
+
+    .gear__picks {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.effects .gear {
+    justify-content: flex-start;
+    gap: 18.0rem;
+
+    @media (max-width: 1050px) {
+        justify-content: center;
+        gap: $fonts-md;        
+    }
+}
+
+@media (max-width: 1050px) {
+
+    .gear__bass img {
+        width: 100%;
+    }
+
+    .gear__guitars img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+

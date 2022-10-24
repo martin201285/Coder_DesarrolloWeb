@@ -815,13 +815,9 @@ footer {
     /* Music */
 
     .musicBox__songs {
+        flex-direction: column-reverse;
         justify-content: center;
     }
-    
-    .musicBox__songs {
-        flex-direction: column-reverse;
-    }
-
 }
 
 @media (max-width: 680px) {

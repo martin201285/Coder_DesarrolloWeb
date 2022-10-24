@@ -19,6 +19,11 @@
                 gap: $spacing-lg;
                 padding: 0 0 $spacing-md 0;
 
+                @media (max-width: 1050px) {
+                    flex-direction: column;
+                    gap: $spacing-md;
+                }
+
                 .container__group {
                     display: flex;
                     flex-direction: column;
@@ -36,6 +41,10 @@
                         border-radius: 1rem;
                         padding: 0 0 0 0.5em;
                         font-size: $fonts-sm;
+                        
+                        @media (max-width: 1050px) {
+                            width: 45.0rem;
+                        }
                     }
 
                     textarea {
@@ -44,6 +53,10 @@
                         border-radius: 1rem;
                         padding: 0 0 0 0.5em;
                         font-size: $fonts-sm;
+
+                        @media (max-width: 1050px) {
+                            width: 45.0rem;
+                        }
                     }
                 }
             }
@@ -54,22 +67,4 @@
             }
         }
     }
-}
-
-@media (max-width: 1050px) {
-    
-    .contactForm .box__container {
-        flex-direction: column;
-        gap: $spacing-md;
-
-        .container__group input {
-            width: 45.0rem;
-        }
-
-        .container__group textarea {
-            width: 45.0rem;
-        }
-    }
-
-
 }

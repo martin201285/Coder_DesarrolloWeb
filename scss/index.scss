@@ -2,18 +2,18 @@
 
 /* MISC */
 
-@import '../scss/misc/normalize';
 @import '../scss/misc/variables';
+@import '../scss/misc/normalize';
 
 /* PARTIALS */
 
-@import '../scss/partials/header';
-@import '../scss/partials/footer';
+@import './partials/header';
+@import './partials/footer';
 
 /* PAGES */
 
-@import '../scss/pages/index';
-@import '../scss/pages/about';
-@import '../scss/pages/gear';
-@import '../scss/pages/music';
-@import '../scss/pages/contact';
+@import './pages/index';
+@import './pages/about';
+@import './scss/pages/gear';
+@import './scss/pages/music';
+@import './scss/pages/contact';
