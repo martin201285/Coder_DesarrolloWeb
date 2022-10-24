@@ -648,14 +648,10 @@ footer {
 
 }
 
-@media (max-width: 1031px) {
+@media (max-width: 1050px) {
 
     header {
         align-items: center;
-    }
-
-    .hamburger__menu {
-        display: block;
     }
 
     #btn {
@@ -680,11 +676,10 @@ footer {
         position: fixed;
         width: 100%;
         height: 100vh;
-        top: -100%;
+        top: -200%;
         left: 0;
         padding:var(--spacing-xxl);
         background-color: rgba(0, 0, 0, 0.555);
-        position: absolute;
         transition: all .7s;
         font-size: var(--fonts-md);
         font-weight: bold;
@@ -785,10 +780,6 @@ footer {
 
 @media (max-width: 768px) {
 
-    html {
-        font-size: 50%;
-    }
-
     header {
         padding: 0 var(--spacing-lg);
         align-items: center;
@@ -818,7 +809,7 @@ footer {
     }
 
     .videos__box iframe {
-        width: 100%;
+        width: auto;
     }
 
     /* Music */
@@ -833,11 +824,18 @@ footer {
 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 680px) {
 
-     /* Index */
+    html {
+        font-size: 50%;
+    }
+}
 
-     .gallery__images {
+@media (max-width: 590px) {
+
+    /* Index */
+
+    .gallery__images {
         display: grid;
         grid-template-columns: 33.34% 28.33% 38.33%;
         grid-template-rows: 19.0rem 18.0rem 26.0rem;
@@ -873,6 +871,24 @@ footer {
     .images__img5 {
         grid-row: 3 / 4;
         grid-column: 1 / 2;
+    }
+}
+
+@media (max-width: 485px) {
+
+    .upcomingRelease__cover img {
+        width: 100%;
+    }
+
+    .collaborationsContainer {
+        justify-content: center;
+    }
+
+    .collaborationsBox {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
     }
 }
 
