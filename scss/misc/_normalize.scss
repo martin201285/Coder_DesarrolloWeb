@@ -45,6 +45,10 @@ html {
             @media (max-width: 1150px) {
                 padding: 0 $spacing-md;
             }
+
+            @media (max-width: 475px) {
+                padding: 0 $spacing-sm;
+            }
         }
 
         main {
@@ -68,6 +72,11 @@ html {
             @media (max-width: 1150px) {
                 margin-left: $spacing-md;
                 margin-right: $spacing-md;
+            }
+
+            @media (max-width: 475px) {
+                margin-left: $spacing-sm;
+                margin-right: $spacing-sm;
             }
         }
 
@@ -93,10 +102,6 @@ html {
                 font-size: 12px;
             }
         }
-    }
-
-    @media (max-width: 680px) {
-        // font-size: 50%;       
     }
 }
 

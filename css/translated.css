@@ -36,6 +36,9 @@ html {
       @media (max-width: 1150px) {
         html body .mainSubtitle {
           padding: 0 3.2rem; } }
+      @media (max-width: 475px) {
+        html body .mainSubtitle {
+          padding: 0 1.6rem; } }
     html body main {
       margin-left: 6.4rem;
       margin-right: 6.4rem; }
@@ -54,6 +57,10 @@ html {
         html body main {
           margin-left: 3.2rem;
           margin-right: 3.2rem; } }
+      @media (max-width: 475px) {
+        html body main {
+          margin-left: 1.6rem;
+          margin-right: 1.6rem; } }
     html body button {
       background: linear-gradient(180deg, #C8C8C8 0%, rgba(200, 200, 200, 0.45) 100%);
       border-radius: 10px;
@@ -138,6 +145,9 @@ header {
     header {
       align-items: center;
       padding: 0 3.2rem; } }
+  @media (max-width: 475px) {
+    header {
+      padding: 0 1.6rem; } }
 
 #check {
   display: none; }
@@ -163,7 +173,11 @@ header {
     top: 0;
     right: 3.2rem;
     background-color: #414141;
-    padding: 0.5rem; } }
+    padding: 0.4rem; } }
+
+@media (max-width: 475px) {
+  #btn {
+    right: 1.6rem; } }
 
 /* FOOTER */
 footer {
@@ -219,9 +233,10 @@ footer {
   .upcomingRelease .upcomingRelease__cover img {
     width: 44.0rem;
     height: 44.8rem; }
-    @media (max-width: 485px) {
+    @media (max-width: 475px) {
       .upcomingRelease .upcomingRelease__cover img {
-        width: 100%; } }
+        width: 100%;
+        height: auto; } }
 
 /* Gallery */
 .gallery {
@@ -575,7 +590,7 @@ footer {
             font-size: 1.6em; }
             @media (max-width: 1150px) {
               .form .contactForm .contactForm__box .box__container .container__group input {
-                width: 45.0rem; } }
+                width: 35.0rem; } }
           .form .contactForm .contactForm__box .box__container .container__group textarea {
             width: 64.0rem;
             height: 32.0rem;
@@ -584,7 +599,7 @@ footer {
             font-size: 1.6em; }
             @media (max-width: 1150px) {
               .form .contactForm .contactForm__box .box__container .container__group textarea {
-                width: 45.0rem; } }
+                width: 35.0rem; } }
       .form .contactForm .contactForm__box .box__container--button {
         display: flex;
         justify-content: center; }
