@@ -44,6 +44,10 @@ html {
 
             h2 {
                 font-weight: normal;
+
+                @media (max-width: 475px) {
+                    text-align: left;
+                }
             }
 
             @media (max-width: 1150px) {

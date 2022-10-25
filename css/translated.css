@@ -36,6 +36,9 @@ html {
       padding: 0 6.4rem; }
       html body .mainSubtitle h2 {
         font-weight: normal; }
+        @media (max-width: 475px) {
+          html body .mainSubtitle h2 {
+            text-align: left; } }
       @media (max-width: 1150px) {
         html body .mainSubtitle {
           padding: 0 3.2rem; } }
