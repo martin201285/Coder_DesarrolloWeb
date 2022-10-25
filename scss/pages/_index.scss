@@ -61,7 +61,7 @@
         width: 44.0rem;
         height: 44.8rem;
 
-        @media (max-width: 475px) {
+        @media (max-width: 525px) {
             width: 100%;
             height: auto;
         }
@@ -192,6 +192,12 @@
             display: grid;
             grid-template-columns: 33.34% 28.33% 38.33%;
             grid-template-rows: 19.0rem 18.0rem 26.0rem;            
+        }
+
+        @media (max-width: 445px) {
+            display: grid;
+            grid-template-columns: 33.34% 28.33% 38.33%;
+            grid-template-rows: 17.0rem 16.0rem 22.0rem;            
         }
     }
 }

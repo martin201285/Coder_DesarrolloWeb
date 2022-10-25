@@ -32,6 +32,10 @@ html {
         h2 {
             font-weight: bold;
             font-size: $fonts-xl;
+
+            @media (max-width: 445px) {
+                text-align: center;
+            }
         }
 
         .mainSubtitle {

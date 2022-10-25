@@ -13,6 +13,11 @@ header {
         &:hover {
             cursor: default;
         }
+
+        @media (max-width: 445px) {
+            font-size: 3.0em;
+            padding: 7.5px 0;
+        }
     }
 
     .menu {
@@ -63,6 +68,10 @@ header {
                 display: flex;
                 gap: $spacing-lg;                
             }
+
+            @media (max-width: 576px) {
+                gap: 4.0rem;                
+            }            
         }
 
         @media (max-width: 1150px) {
