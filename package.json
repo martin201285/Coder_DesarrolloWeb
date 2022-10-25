@@ -1,7 +1,7 @@
 {
   "name": "site",
   "version": "1.0.0",
-  "description": "",
+  "description": "Official website of Martin Brown (Proyecto Final Coderhouse)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,7 @@
     "url": "git+https://github.com/martin201285/Coder_DesarrolloWeb.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Martín Marron",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/martin201285/Coder_DesarrolloWeb/issues"
