@@ -65,4 +65,4 @@ Deliver the final version of a static website composed of 5 pages. It must be up
 <br />
 
 ## LIVE SERVER:
-[LINK](https://martinbrown.netlify.app)
+:globe_with_meridians: [LINK](https://martinbrown.netlify.app) :globe_with_meridians:
