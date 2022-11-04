@@ -9,6 +9,7 @@ Entregar la versión final de un sitio web estático compuesto por 5 páginas, c
 ###### Tecnologías:
 - HTML
 - CSS
+- JavaScript
 
 ###### Metodología HTML:
 - BEM
@@ -41,6 +42,7 @@ Deliver the final version of a static website composed of 5 pages. It must be up
 ###### Technologies:
 - HTML
 - CSS
+- JavaScript
 
 ###### HTML methodology:
 - BEM
